@@ -24,17 +24,17 @@ export default function Hero() {
               </span>
             </div>
             
+            <h2 className="text-2xl md:text-3xl font-heading font-bold text-gray-800 mb-4 leading-tight">
+              Executive Support & Operations: <span className="text-secondary">Stop Wasting Time on Backlog and Bottlenecks</span>
+            </h2>
+
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-primary leading-tight mb-4">
               Hi, I'm <span className="text-secondary">Ana Roces Lingatong</span>
             </h1>
 
-            <p className="text-lg md:text-xl text-gray-600 mb-6 max-w-lg leading-relaxed">
+            <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-lg leading-relaxed">
               Your Strategic Virtual Partner for Executive Administration, Property Management, and Workflow Automation.
             </p>
-
-            <h2 className="text-2xl md:text-3xl font-heading font-bold text-gray-800 mb-8 leading-tight">
-              Executive Support & Operations: <span className="text-secondary">Stop Wasting Time on Backlog and Bottlenecks</span>
-            </h2>
             
             <div className="flex flex-col sm:flex-row gap-4 mb-10">
               <Button size="lg" className="bg-primary hover:bg-primary/90 text-white font-semibold text-lg px-8 h-14">
