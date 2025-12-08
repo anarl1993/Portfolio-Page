@@ -3,15 +3,15 @@ import bgPattern from "@assets/generated_images/abstract_geometric_background_wi
 
 const toolCategories = [
   {
-    name: "CRM & Project Management",
+    name: "CRM/PM",
     tools: ["HubSpot", "ClickUp", "Asana", "Monday.com", "Odoo", "Kustomer", "Notion", "Zoho", "Zapier"]
   },
   {
-    name: "Property Management",
+    name: "Property",
     tools: ["Buildium", "Airtable", "Trello", "Leadsimple"]
   },
   {
-    name: "General Operations",
+    name: "General",
     tools: ["Google Workspace", "Microsoft Office", "Slack", "VOIP", "Zoom", "Teams", "QuickBooks"]
   }
 ];
@@ -29,7 +29,7 @@ export default function Tools() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16 text-white">
           <h2 className="font-heading font-bold text-3xl md:text-4xl mb-6">
-            Tool Mastery & Tech Stack
+            Key Tools Mastery
           </h2>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">
             I leverage modern tools including Generative AI and advanced data analysis to build dashboards and deliver actionable KPI tracking.

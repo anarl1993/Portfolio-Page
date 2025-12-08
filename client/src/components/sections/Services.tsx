@@ -4,25 +4,32 @@ import { Building2, Calendar, Database, Settings, ArrowRight } from "lucide-reac
 
 const services = [
   {
-    title: "Executive Operations Support",
-    headline: "Reclaim Your Focus Time",
-    description: "Proactive, C-Level Administrative Support including calendar & inbox management, zero-error travel planning, minute taking, and stakeholder communication.",
+    title: "EXECUTIVE & C-LEVEL SUPPORT",
+    headline: "Expert Administrative Assistance",
+    description: "Expert Calendar Management, Inbox Management, Travel Planning, and professional Client Communication and Email Correspondence.",
     icon: Calendar,
     color: "bg-blue-50 text-blue-600",
   },
   {
-    title: "Systems & Workflow Automation",
-    headline: "Turn Chaos into Scale",
-    description: "SOP creation & process documentation, CRM setup & optimization (HubSpot, ClickUp, Asana), data cleanup, and KPI dashboards.",
+    title: "REAL ESTATE & PROPERTY MANAGEMENT VA",
+    headline: "Property Support & Coordination",
+    description: "Full support for Tenant Communication, Lease Scheduling/Renewals, Maintenance Request Tracking, and Application Processing.",
+    icon: Building2,
+    color: "bg-emerald-50 text-emerald-600",
+  },
+  {
+    title: "OPERATIONS & PROJECT MANAGEMENT",
+    headline: "Systems & Workflow Optimization",
+    description: "SOP Creation, Workflow Organization, VOIP Support, and comprehensive CRM Setup & Administration (e.g., HubSpot, ClickUp, Asana, Monday.com, Odoo, Kustomer).",
     icon: Settings,
     color: "bg-purple-50 text-purple-600",
   },
   {
-    title: "Specialized Property Mgmt Support",
-    headline: "Dedicated Real Estate Help",
-    description: "Tenant & lease coordination, maintenance request tracking, application management, and property database updates (Buildium, Airtable).",
-    icon: Building2,
-    color: "bg-emerald-50 text-emerald-600",
+    title: "DATA ENTRY & OPTIMIZATION",
+    headline: "Data Management & Analysis",
+    description: "High-Volume Data Entry, Data Cleanup, Backlog Resolution, Report Preparation, Data Analysis, and creating custom dashboards (Google Sheets, Excel, Data Studio).",
+    icon: Database,
+    color: "bg-orange-50 text-orange-600",
   },
 ];
 
@@ -34,12 +41,15 @@ export default function Services() {
           <h2 className="text-primary font-heading font-bold text-3xl md:text-4xl mb-4">
             How I Bring Clarity & Efficiency
           </h2>
-          <p className="text-lg text-gray-600">
+          <p className="text-lg text-gray-600 mb-6">
             I specialize in the crucial intersection of Administration, Property Management, and Data Optimization.
+          </p>
+          <p className="text-lg font-medium text-secondary italic">
+            "My focus is on reliability, clear communication, and delivering systems that save you time and eliminate administrative bottlenecks."
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8">
+        <div className="grid lg:grid-cols-2 gap-8">
           {services.map((service, index) => (
             <motion.div
               key={index}
@@ -55,7 +65,7 @@ export default function Services() {
                     <service.icon className="w-7 h-7" />
                   </div>
                   <div className="space-y-1">
-                    <CardTitle className="text-xl font-bold text-primary group-hover:text-secondary transition-colors">
+                    <CardTitle className="text-xl font-bold text-primary group-hover:text-secondary transition-colors uppercase">
                       {service.title}
                     </CardTitle>
                     <p className="text-sm font-semibold text-secondary uppercase tracking-wide">
