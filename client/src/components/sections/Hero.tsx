@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { ArrowRight, CheckCircle } from "lucide-react";
+import { ArrowRight, CheckCircle, Clock, Database, Home } from "lucide-react";
 import heroImage from "@assets/generated_images/professional_modern_home_office_workspace_desk_with_laptop_and_plants.png";
 
 export default function Hero() {
@@ -25,11 +25,14 @@ export default function Hero() {
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-primary leading-tight mb-6">
-              Streamline Your <span className="text-secondary">Operations</span> & Scale Your Business
+              Executive Support & <span className="text-secondary">Operations</span>
             </h1>
+            <h2 className="text-2xl md:text-3xl font-heading font-semibold text-gray-700 mb-6">
+              Stop Wasting Time on Backlog and Bottlenecks
+            </h2>
             
             <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-lg leading-relaxed">
-              Highly experienced Executive Virtual Assistant helping founders and real estate investors achieve focus through operations support and CRM automation.
+              Your Strategic Virtual Partner for Executive Administration, Property Management, and Workflow Automation.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 mb-10">
@@ -44,11 +47,11 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row gap-6 text-sm text-gray-500">
               <div className="flex items-center">
                 <CheckCircle className="text-secondary h-5 w-5 mr-2" />
-                <span>CRM Implementation Expert</span>
+                <span>Strategic Partner</span>
               </div>
               <div className="flex items-center">
                 <CheckCircle className="text-secondary h-5 w-5 mr-2" />
-                <span>Property Management Support</span>
+                <span>Not Just a Task-Taker</span>
               </div>
             </div>
           </motion.div>
