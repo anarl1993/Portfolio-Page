@@ -20,7 +20,7 @@ export default function Hero() {
                 <span className="relative inline-flex rounded-full h-3 w-3 bg-secondary"></span>
               </span>
               <span className="text-secondary font-semibold text-sm tracking-wide uppercase">
-                Available for new clients | $10.00/hr
+                Available for new clients
               </span>
             </div>
             

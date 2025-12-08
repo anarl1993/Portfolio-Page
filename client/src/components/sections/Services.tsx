@@ -4,8 +4,8 @@ import { Building2, Calendar, Database, Settings } from "lucide-react";
 
 const services = [
   {
-    title: "Executive & C-Level Support",
-    description: "Expert Calendar Management, Inbox Management, Travel Planning, and professional Client Communication.",
+    title: "Executive Assistance & Support",
+    description: "Expert Executive Assistance, Transcription, Executive Travel Planning, Calendar Management, and Inbox Management.",
     icon: Calendar,
     color: "bg-blue-50 text-blue-600",
   },
