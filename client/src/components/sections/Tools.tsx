@@ -1,18 +1,45 @@
 import { Badge } from "@/components/ui/badge";
 import bgPattern from "@assets/generated_images/abstract_geometric_background_with_teal_and_blue_gradients.png";
+import { Phone } from "lucide-react";
+
+// Helper to get Simple Icons URL
+const getIconUrl = (slug: string) => `https://cdn.simpleicons.org/${slug}/white`;
 
 const toolCategories = [
   {
     name: "CRM/PM",
-    tools: ["HubSpot", "ClickUp", "Asana", "Monday.com", "Odoo", "Kustomer", "Notion", "Zoho", "Zapier"]
+    tools: [
+      { name: "HubSpot", icon: getIconUrl("hubspot") },
+      { name: "ClickUp", icon: getIconUrl("clickup") },
+      { name: "Asana", icon: getIconUrl("asana") },
+      { name: "Monday.com", icon: getIconUrl("mondaydotcom") },
+      { name: "Odoo", icon: getIconUrl("odoo") },
+      { name: "Kustomer", icon: getIconUrl("kustomer") }, // Might not exist, will handle error or use fallback visually if needed
+      { name: "Notion", icon: getIconUrl("notion") },
+      { name: "Zoho", icon: getIconUrl("zoho") },
+      { name: "Zapier", icon: getIconUrl("zapier") }
+    ]
   },
   {
     name: "Property",
-    tools: ["Buildium", "Airtable", "Trello", "Leadsimple"]
+    tools: [
+      { name: "Buildium", icon: null }, // Buildium doesn't have a simple icon usually
+      { name: "Airtable", icon: getIconUrl("airtable") },
+      { name: "Trello", icon: getIconUrl("trello") },
+      { name: "Leadsimple", icon: null } // Leadsimple doesn't have a simple icon usually
+    ]
   },
   {
     name: "General",
-    tools: ["Google Workspace", "Microsoft Office", "Slack", "VOIP", "Zoom", "Teams", "QuickBooks"]
+    tools: [
+      { name: "Google Workspace", icon: getIconUrl("google") },
+      { name: "Microsoft Office", icon: getIconUrl("microsoft") },
+      { name: "Slack", icon: getIconUrl("slack") },
+      { name: "VOIP", icon: "phone" }, // Special case for Lucide icon
+      { name: "Zoom", icon: getIconUrl("zoom") },
+      { name: "Teams", icon: getIconUrl("microsoftteams") },
+      { name: "QuickBooks", icon: getIconUrl("quickbooks") }
+    ]
   }
 ];
 
@@ -45,10 +72,23 @@ export default function Tools() {
               <div className="flex flex-wrap gap-2">
                 {category.tools.map((tool) => (
                   <Badge 
-                    key={tool} 
-                    className="bg-white text-primary hover:bg-secondary hover:text-white transition-colors px-3 py-1 text-sm font-medium border-none"
+                    key={tool.name} 
+                    className="bg-white text-primary hover:bg-secondary hover:text-white transition-colors pl-2 pr-3 py-1 text-sm font-medium border-none flex items-center gap-2"
                   >
-                    {tool}
+                    {tool.icon === "phone" ? (
+                      <Phone className="w-4 h-4 text-primary" />
+                    ) : tool.icon ? (
+                      <img 
+                        src={tool.icon} 
+                        alt={`${tool.name} logo`} 
+                        className="w-4 h-4 object-contain brightness-0 invert filter group-hover:brightness-0 group-hover:invert-0"
+                        style={{ filter: "invert(0%)" }} // Force black initially (since badge is white)
+                        onError={(e) => {
+                          e.currentTarget.style.display = 'none';
+                        }}
+                      />
+                    ) : null}
+                    {tool.name}
                   </Badge>
                 ))}
               </div>
