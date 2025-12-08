@@ -1,12 +1,12 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { motion } from "framer-motion";
-import { Building2, Calendar, Database, Settings, ArrowRight } from "lucide-react";
+import { Building2, Calendar, Database, Settings, ArrowRight, Zap, Mail, Mic, Plane } from "lucide-react";
 
 const services = [
   {
     title: "EXECUTIVE & C-LEVEL SUPPORT",
     headline: "Expert Administrative Assistance",
-    description: "Expert Calendar Management, Inbox Management, Travel Planning, and professional Client Communication and Email Correspondence.",
+    description: "Expert Calendar Management, Inbox Management, and professional Client Communication and Email Correspondence.",
     icon: Calendar,
     color: "bg-blue-50 text-blue-600",
   },
@@ -20,16 +20,44 @@ const services = [
   {
     title: "OPERATIONS & PROJECT MANAGEMENT",
     headline: "Systems & Workflow Optimization",
-    description: "SOP Creation, Workflow Organization, VOIP Support, and comprehensive CRM Setup & Administration (e.g., HubSpot, ClickUp, Asana, Monday.com, Odoo, Kustomer).",
+    description: "SOP Creation, Workflow Organization, VOIP Support, and operational efficiency auditing.",
     icon: Settings,
     color: "bg-purple-50 text-purple-600",
   },
   {
     title: "DATA ENTRY & OPTIMIZATION",
     headline: "Data Management & Analysis",
-    description: "High-Volume Data Entry, Data Cleanup, Backlog Resolution, Report Preparation, Data Analysis, and creating custom dashboards (Google Sheets, Excel, Data Studio).",
+    description: "High-Volume Data Entry, Data Cleanup, Backlog Resolution, Report Preparation, Data Analysis, and creating custom dashboards.",
     icon: Database,
     color: "bg-orange-50 text-orange-600",
+  },
+  {
+    title: "CRM SET-UP & AUTOMATION",
+    headline: "Streamline Your Systems",
+    description: "Comprehensive CRM Setup & Administration (HubSpot, ClickUp, Asana, Monday.com, Odoo, Kustomer) and custom workflow automations.",
+    icon: Zap,
+    color: "bg-yellow-50 text-yellow-600",
+  },
+  {
+    title: "EMAIL MARKETING",
+    headline: "Campaigns & Communication",
+    description: "Designing, scheduling, and managing email campaigns to keep your audience engaged and your brand top-of-mind.",
+    icon: Mail,
+    color: "bg-pink-50 text-pink-600",
+  },
+  {
+    title: "TRANSCRIPTION SERVICES",
+    headline: "Accurate & Efficient",
+    description: "Converting your audio and video content into accurate text for meetings, podcasts, and documentation.",
+    icon: Mic,
+    color: "bg-indigo-50 text-indigo-600",
+  },
+  {
+    title: "PROFESSIONAL EXECUTIVE TRAVEL",
+    headline: "Seamless Itineraries",
+    description: "Comprehensive travel planning including flights, accommodations, and detailed itineraries for stress-free business trips.",
+    icon: Plane,
+    color: "bg-sky-50 text-sky-600",
   },
 ];
 
@@ -49,7 +77,7 @@ export default function Services() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <motion.div
               key={index}
