@@ -28,7 +28,7 @@ export default function Tools() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16 text-white">
-          <h2 className="font-heading font-bold text-3xl md:text-4xl mb-6">
+          <h2 className="font-heading font-bold text-3xl md:text-4xl mb-6 text-white">
             Key Tools Mastery
           </h2>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">

@@ -34,7 +34,7 @@ export default function WhyChooseMe() {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           
           <div>
-            <h2 className="font-heading font-bold text-3xl md:text-4xl mb-6">
+            <h2 className="font-heading font-bold text-3xl md:text-4xl mb-6 text-white">
               Why Partner With Me?
             </h2>
             <p className="text-lg text-gray-300 mb-8 leading-relaxed">
@@ -65,7 +65,7 @@ export default function WhyChooseMe() {
 
           <div className="relative">
             <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 md:p-12">
-              <h3 className="text-2xl font-bold mb-6">Ready to Move Beyond Administrative Overload?</h3>
+              <h3 className="text-2xl font-bold mb-6 text-white">Ready to Move Beyond Administrative Overload?</h3>
               <p className="text-gray-300 mb-8 text-lg">
                 Stop spending your valuable time on logistics, backlog, and repetitive tasks. Let's discuss how I can help you reclaim your time.
               </p>
