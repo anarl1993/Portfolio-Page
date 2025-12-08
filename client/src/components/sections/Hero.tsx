@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { ArrowRight, CheckCircle, Clock, Database, Home } from "lucide-react";
-import heroImage from "@assets/generated_images/professional_modern_home_office_workspace_desk_with_laptop_and_plants.png";
+import heroImage from "@assets/Screenshot_2025-10-28_230604_1765225892163.jpg";
 
 export default function Hero() {
   return (
@@ -25,11 +25,14 @@ export default function Hero() {
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-primary leading-tight mb-6">
-              Executive Support & <span className="text-secondary">Operations</span>
+              Hi, I'm <span className="text-secondary">Ana Roces Lingatong</span>
             </h1>
             <h2 className="text-2xl md:text-3xl font-heading font-semibold text-gray-700 mb-6">
-              Stop Wasting Time on Backlog and Bottlenecks
+              Executive Support & Operations
             </h2>
+            <h3 className="text-xl md:text-2xl font-medium text-gray-500 mb-6">
+              Stop Wasting Time on Backlog and Bottlenecks
+            </h3>
             
             <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-lg leading-relaxed">
               Your Strategic Virtual Partner for Executive Administration, Property Management, and Workflow Automation.
@@ -62,11 +65,11 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="relative"
           >
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white aspect-[3/4] max-w-md mx-auto">
               <img 
                 src={heroImage} 
-                alt="Professional Workspace" 
-                className="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-700"
+                alt="Ana Roces Lingatong" 
+                className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent mix-blend-multiply"></div>
             </div>
