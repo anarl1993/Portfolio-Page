@@ -20,7 +20,7 @@ export default function Navbar() {
           <div className="flex-shrink-0 flex items-center">
             <Link href="/">
               <span className="font-heading font-bold text-2xl text-primary cursor-pointer tracking-tight">
-                Ana<span className="text-secondary">Lingatong</span>
+                Executive<span className="text-secondary">VA</span>
               </span>
             </Link>
           </div>
